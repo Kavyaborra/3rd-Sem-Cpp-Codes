@@ -14,7 +14,7 @@ public:
     vector3d ()
     {
     };
-    vector3d (float x, float y,float z){
+    vector3d (float x, float y, float z){
       _x=x;
       _y=y;
       _z=z;
@@ -49,18 +49,18 @@ vector3d& add(vector3d b){
   return temp;}
 
 vector3d& subtract( vector3d b){
-vector3d *imp=new vector3d((_x-b.get_x()),(_y-b.get_y()),(_z-b.get_z()));
-vector3d& temp=*imp;
+vector3d *imp = new vector3d((_x-b.get_x()),(_y-b.get_y()),(_z-b.get_z()));
+vector3d& temp = *imp;
 return temp;}
 
 float dot(vector3d b) {
-float *k = new float(_x*b.get_x()+_y*b.get_y() + _z*b.get_z());
-float& temp= *k;
+float *imp = new float(_x*b.get_x() + _y*b.get_y() + _z*b.get_z());
+float& temp = *imp;
 return temp;}
 
 float norm(){
-float *k=new float(sqrt(pow(_x,2)+pow(_y,2)+pow(_z,2)));
-float& temp= *k;
+float *imp = new float(sqrt(pow(_x,2)+pow(_y,2)+pow(_z,2)));
+float& temp= *imp;
 return temp;
 
 }
@@ -86,7 +86,7 @@ vector3d& scalar_product(int f){
 
 int main(){
   vector3d a,b;
-  float x,y,z,i,j,k,w;
+  float x, y, z, i, j, k, w;
   int u;
   cin >> x>>y>>z;
     a.set_x(x);a.set_y(y);a.set_z(z);
