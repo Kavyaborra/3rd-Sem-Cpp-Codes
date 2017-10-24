@@ -52,7 +52,7 @@ vector3d temp;
 }
 
 int main(){
-  vector3d a,b, result1, result, result2, result4, result5;
+  vector3d a, b, result1, result, result2, result4, result5;
   float x;
   int y;
 cin >> a.i>>a.j>>a.k;
