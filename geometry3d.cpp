@@ -2,6 +2,7 @@
 #include<cmath>
 
 using namespace std;
+
 struct vector3d{
 float i,j,k;
 };
@@ -46,8 +47,6 @@ return temp;}
 float dot(vector3d a, vector3d b){
 return ((a.i)*(b.i)+(a.k)*(b.k)+(a.j)*(b.j));
 }
-
-
 
 vector3d cross(vector3d a, vector3d b){
 vector3d temp;
