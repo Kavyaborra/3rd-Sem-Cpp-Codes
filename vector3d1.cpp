@@ -55,22 +55,22 @@ int main(){
   vector3d a, b, result1, result, result2, result4, result5;
   float x;
   int y;
-cin >> a.i>>a.j>>a.k;
-cin >> b.i>>b.j>>b.k;
+cin >> a.i >> a.j >> a.k;
+cin >> b.i >> b.j >> b.k;
 cin >> x;
 cin >> y;
   result=add(a,b);
-cout << result.i<<result.j<<result.k ;
+cout << result.i << result.j << result.k ;
   result1=subtract(a,b);
-cout << result1.i<<result1.j<<result1.k ;
+cout << result1.i << result1.j << result1.k ;
 cout << dot(a,b);
   result2=cross(a,b);
-cout << result2.i<<result2.j<<result2.k;
+cout << result2.i << result2.j << result2.k;
 cout << norm(a);
   result4=scalar_product(x, b);
-cout << result4.i<<result4.j<<result4.k;
+cout << result4.i << result4.j << result4.k;
   result5=scalar_product(y, b);
-cout << result5.i<<result5.j<<result5.k;
+cout << result5.i << result5.j << result5.k;
   return 0;
 }
 
